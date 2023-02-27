@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo');
+
+        /*NAV*/
+.navContainer {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(182, 250, 255),  rgb(0, 238, 255));
+    align-items: center;
+}
+
+#stranger--things--title {
+    font-size: 50px;
+    margin: 0;
+    margin-right: auto;
+    margin-left: 100px;
+    font-family: 'Climate Crisis', cursive;
+    color: rgb(0, 238, 255);
+}
+
+.nav--items {
+    display: flex;
+    font-size: 20px;
+    margin-right: 100px;
+}
+
+.nav--single--item {
+    margin-left: 40px;
+}
+
+#nav--logout a:visited{
+    color: rgb(218, 5, 5);
+}
+
+.nav--items a:link {
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgb(35, 108, 103), 0 0 1em rgb(118, 118, 118), 0 0 0.2em rgb(255, 234, 195);
+  }
+.nav--items a:visited {
+    text-decoration: none; 
+    color: rgb(111, 164, 255);
+}
+
+#nav--login a:visited{
+    color: rgb(0, 175, 17);
+}
+#nav--login a:link{
+    color: rgb(0, 175, 17);
+}
+
+.nav--items a:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 3px #4d7d77;
+    border-radius: 10%;
+}
+
+#nav--username {
+    color: rgb(255, 230, 0);
+    text-shadow: 1px 1px 2px rgb(13, 40, 38), 0 0 1em rgb(118, 118, 118), 0 0 0.2em rgb(255, 234, 195);
+    font-size: 30px;
+}
+
+
+        /*LOGIN*/
+.login--container {
+    display: flex;
+    background-image: linear-gradient(rgb(111, 164, 255), rgb(255, 255, 255));
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    box-shadow: 2px 2px 2px 2px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.login--input {
+    margin: 20px;
+    width: 60%;
+    height: 40px;
+    font-size: 24px;
+}
+
+
+
+
+
+        /*MESSAGE*/
+.message--container {
+    display: flex;
+    background-image: linear-gradient(rgb(123, 238, 234), rgb(255, 255, 255));
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    max-height: 800px;
+    max-width: 800px;
+    box-shadow: 2px 2px 2px 2px;
+    margin-top: 50px;
+}
+
+.message--input {
+    margin: 20px;
+}
+
+#message--pass--input {
+    padding: 50px;
+}
+
+.message--send--button {
+    font-size: 30px;
+}
+
+
+
+
+
+        /*HOME*/
+.posts--all {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 2px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 2%;
+    width: 75%;
+}
+
+.posts--each {
+    margin: auto;
+    margin-left:15px;
+    margin-top:15px;
+    font-size: 20px;
+    border-bottom: 1px solid ;
+}
+
+.home--wat {
+    font-size: 25px;
+    color: rgb(1, 141, 156);
+    text-shadow: 1px 1px 2px rgb(35, 108, 103), 0 0 1em rgb(118, 118, 118), 0 0 0.2em rgb(255, 234, 195);
+}
+
+.home--container {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(197, 198, 197),  rgb(255, 255, 255));
+}
+
+.posts--container {
+    flex: 4;
+    overflow: auto;
+    max-height: 800px;
+    background-image: linear-gradient(to right, rgb(0, 238, 255), rgb(182, 250, 255),  rgb(255, 234, 195));
+    margin: 50px;
+    box-shadow: 1px 1px 4px 3px rgb(242, 218, 218);
+}
+
+#h1-posts {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-family: 'Arvo', serif;
+    font-weight: bolder;
+}
+
+#delete--button {
+    margin-left: auto;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 200px;
+    background-color: rgb(5, 5, 5);
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+#delete--button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+
+.postform--container {
+    background-image: linear-gradient(to right, rgb(255, 234, 195), rgb(255, 255, 255),  rgb(0, 238, 255));
+    flex: 2;
+    margin: 50px;
+    margin-right: 60px;
+    
+    text-align: center;
+    box-shadow: 1px 1px 1px 3px rgb(206, 206, 206);
+}
+
+.postForm--content--all {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.postForm--content {
+    margin-top: 30px;
+}
+
+.postForm--label {
+    display: inline-flex;
+    margin: auto;
+    padding: 30px;
+    font-size: 24px;
+}
+
+#postForm--button {
+    width: 30%;
+    margin: auto;
+}
+
+#post--submitted {
+    color: green;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+            /*WELCOME*/
+
+
+.welcome--container {
+    background-image: linear-gradient(to right, rgb(255, 234, 195), rgb(255, 255, 255), rgb(0, 238, 255));
+    height: 100vh;
+    color: blue;
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome--buttons {
+    max-width: 400px;
+    padding: 40px;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    background-image: linear-gradient(to right, rgb(255, 234, 195), rgb(255, 255, 255),  rgb(0, 238, 255));
+    border-radius: 5%;
+}
+
+.welcome--buttons:hover {
+    background-image: linear-gradient(to right, rgb(50, 247, 1), rgb(255, 255, 255),  rgb(25, 250, 0));
+}
+
+.welcome--buttons a:link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.welcome--buttons a:visited {
+    text-decoration: none;
+    color: rgb(7, 0, 0);
+}
+
+
+
+
+            /*Register*/
+.register--container {
+    display: flex;
+    background-image: linear-gradient(rgb(0, 186, 0), rgb(255, 255, 255));
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    box-shadow: 2px 2px 2px 2px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.login--buttons {
+    padding: 15px;
+    margin: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.login--buttons:hover {
+    background-color: rgb(254, 254, 254);
+}
+
+.login--buttons a:visited{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.login--buttons a:link {
+    text-decoration: none;
+}
+
