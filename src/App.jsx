@@ -39,6 +39,7 @@ function App() {
     const logout = () => {
       setIsLoggedIn(false);
       setToken('')
+      setLoggedInName('')
     };
 
     const currentToken = (token) => {
@@ -53,7 +54,7 @@ function App() {
           <Route path='/Home' element={<Home posts={posts} setPosts={setPosts} loggedInName={loggedInName} token={token} isLoggedIn={isLoggedIn}/>}/>
           <Route path='/' element={<WelcomePage/>}/>
           <Route path='/Login' element={<Login updateLoggedInName={updateLoggedInName} loggedIn={loggedIn} currentToken={currentToken}/>}/>
-          <Route path='/Profile' element={<Profile />}/>
+          <Route path='/Profile' element={<Profile token={token} posts={posts} loggedInName={loggedInName}/>}/>
           <Route path='/Register' element={<Register updateLoggedInName={updateLoggedInName} loggedIn={loggedIn} currentToken={currentToken}/>}/>
         </Routes>
     </div>

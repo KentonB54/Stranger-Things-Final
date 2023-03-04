@@ -26,7 +26,7 @@ const submit = async (e) => {
         });
         const result = await response.json();
         console.log(result)
-        if (result.success) {
+        if (result.success) { 
           props.updateLoggedInName(name)
           props.loggedIn()
           props.currentToken(result.data.token)
@@ -41,6 +41,7 @@ const submit = async (e) => {
 
 
   return (
+    <div className='login--background'>
     <div className='login--container'>
     <form onSubmit={submit} >
         <h1>login</h1>
@@ -53,7 +54,7 @@ const submit = async (e) => {
             />
 
         <input 
-            type='text' 
+            type='password' 
             placeholder='password' 
             className='login--input'
             onChange={e => setPassword(e.target.value)}
@@ -63,6 +64,7 @@ const submit = async (e) => {
         
     </form>
     <button className='login--buttons'><Link to="/Register">Register</Link></button>
+    </div>
     </div>
   )
 }

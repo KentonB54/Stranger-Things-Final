@@ -10,6 +10,10 @@ const Postform = (props) => {
   const [location, setLocation] = useState('')
   const [showPopup, setShowPopup] = useState(false);
 
+
+
+
+
   const Popup = ({ showPopup }) => {
     return showPopup ? (
       <div>
@@ -34,15 +38,21 @@ const Postform = (props) => {
               description: description,
               price: price,
               willDeliver: willDeliver,
-              location: location
+              location: location,
             }
          })
       });
         const result = await response.json();
-        console.log(result);
+        console.log('newpost',result);
         if(!props.token) {
           alert('Login or Register to post')
+          return;
+        } 
+        if (!title || !description || !price) {
+          alert('Must contain a title, description and price')
         } else if (props.token) {
+         const updatedPosts = [result.data.post,   ...props.posts]
+         await props.setPosts(updatedPosts)
           setShowPopup(true)
           setTimeout(() => setShowPopup(false), 3000);
         }
@@ -53,7 +63,7 @@ const Postform = (props) => {
 
   return (
     <>
-    <form className='postForm--content--all' onSubmit={postNewForm}>
+    <form className='postForm--content--all' method='post' onSubmit={postNewForm}>
       <h4>Add a new post here</h4>
         <input 
               className='postForm--content'

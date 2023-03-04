@@ -42,6 +42,7 @@ const Register = (props) => {
     }
 
   return (
+    <div className='register--background'>
     <div className='register--container'>
     <form onSubmit={submit}>
         <h1>Sign up here</h1>
@@ -54,7 +55,7 @@ const Register = (props) => {
             />
 
         <input 
-            type='text' 
+            type='password' 
             placeholder='password' 
             className='login--input'
             minLength={8}
@@ -64,6 +65,7 @@ const Register = (props) => {
         <button className='login--buttons' type='submit'>submit</button>
     </form>
     <button className='login--buttons'><Link to="/Login">Back to Login</Link></button>
+    </div>
     </div>
 
 
